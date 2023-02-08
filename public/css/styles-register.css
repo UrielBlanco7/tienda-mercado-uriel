@@ -1,0 +1,156 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+.main-header{
+    background-color: #EAC926;
+    font-family: Roboto;
+    padding: 20px;
+    width: 97.6%;
+
+}
+.logo{
+    width: 200px;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+    color: #03264C;
+}
+h2{
+    font-size: 2rem;
+    font-family: Roboto;    
+    color: #03264C;
+    text-decoration:dotted
+}
+.burger-menu{
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    background-color:#03264C;
+    display: block;
+    max-width: 40px;
+    padding: 10px 0px;
+    margin: auto;
+    border-radius: 8px;
+    margin-bottom: 14px;
+  }
+body{
+    background-color: #ebebeb;
+}
+.main-navbar{
+    display: none; 
+}
+.main-navbar ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #03264C;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+@media (min-width: 361px) {
+    .main-navbar{
+        display: block; 
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+@media (min-width: 769px) {
+
+    .main-header-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        max-width: 25rem;
+        text-align: right;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 1rem;
+    }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Roboto;
+  }
+  
+  label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    padding-top: 20px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  input[type="password"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    width: 50%;
+    padding: 10px 20px;
+    background-color:#d2b523;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color:#EAC926;
+  }
+  .interests {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  input[type="checkbox"] {
+    margin: 0 77rem 0 0;
+    width: 20px;
+    height: 20px;
+  }
+  
+  label[for^="interests"] {
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 1.1rem;
+  }
+  label[for="interests"] {
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 1.3rem;
+  }

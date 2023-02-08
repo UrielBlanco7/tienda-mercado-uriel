@@ -1,0 +1,218 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+.main-header{
+    background-color: #EAC926;
+    font-family: Roboto;
+    padding: 20px;
+    width: 97.6%;
+
+}
+.logo{
+    width: 200px;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+    color: #03264C;
+}
+h2{
+    font-size: 2rem;
+    font-family: Roboto;    
+    color: #03264C;
+    text-decoration:dotted
+}
+h6{
+    font-size: 1rem;
+}
+h3{
+ font-size: .8rem;
+}
+.precio{
+    width: 30%;
+    font-size: 1.2em;
+    font-family: Roboto;
+}
+.desc{
+    font-size: 16px;
+    font-family: Roboto;
+    text-align: left;
+    color: #666;
+    display: none;
+}
+.cuerpo{
+    font-size: 12px;
+    font-family: Roboto;
+}
+footer{
+    margin-top: 40px;
+}
+.burger-menu{
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    background-color:#03264C;
+    display: block;
+    max-width: 40px;
+    padding: 10px 0px;
+    margin: auto;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+.pie-de-pagina{
+    text-align: center;
+}
+#icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#03264C;
+}
+body{
+    background-color: #ebebeb;
+}
+footer{
+    background-color: white;
+}
+article{
+    background-color: white;
+    margin-bottom: 10px;
+}
+main{
+    width:90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.info-box {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    text-align: left;
+}
+#descuento{
+    color: #39b54a;
+    font-family: Roboto;
+    width: 70%;
+}
+.barrabusqueda{
+    font-size: 1.5rem;
+    width: 10%;
+    text-align: center;
+}
+#camion{
+    font-size: 1em;
+    color: #39b54a;
+    margin: 0px;
+    padding: 0px;
+    transition: transform 500ms ease-in-out;
+}
+.main-navbar{
+    display: none; 
+}
+.main-navbar ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #03264C;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+.contenedor{
+    width: 100%;
+    border-top: #666 10px;
+  }
+
+main section article #camion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+  }
+@media (min-width: 361px) {
+    .desc{
+        display: block;
+        
+    }
+    .producto-muestra {
+        
+        width: 45%;
+        height: 45%;
+    }
+    .main-navbar{
+        display: block; 
+    }
+    .burger-menu{
+        display: none;
+    }
+    .division{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    h2{
+        text-align: left;
+    }
+     
+}
+@media (min-width: 769px) {
+    .producto-muestra {
+        width: 24%;
+        transition: box-shadow 300ms ease-in-out;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .producto-muestra:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .info-box:hover > .desc{
+        height: auto;
+    }
+    .main-header-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        max-width: 25rem;
+        text-align: right;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 1rem;
+    }
+    .desc{
+        overflow: hidden;
+        height: 0;
+        transition: height 500ms  ease-out;
+    }
+    #camion:hover{
+        transform: rotate(-90deg);
+    }
+    #camion{
+        display: flex;
+        position: absolute;
+        top: 22rem;
+        right: 2rem;
+    }
+    .pie-de-pagina{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+ 
+}
