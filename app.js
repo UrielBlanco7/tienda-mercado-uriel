@@ -8,9 +8,6 @@ const publico = path.resolve(__dirname, "./public");
 app.use(express.static(publico));
 
 
-app.listen(8000, () => console.log("Servidor levantado en puerto 8000"));
-
-
 app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "views/home.html"));
 });
