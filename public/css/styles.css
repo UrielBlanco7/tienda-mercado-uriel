@@ -133,6 +133,9 @@ main section article #camion{
     background-color: #FFF;
     border-radius: 50%;
   }
+  .cuerpo{
+    padding: 10px;
+  }
 @media (min-width: 361px) {
     .desc{
         display: block;
